@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#080808" />
+    <meta
+      name="description"
+      content="Thiệp cưới online phong cách rèm thêu trắng của Khánh Duy và Ngọc Hân."
+    />
+    <title>Khánh Duy & Ngọc Hân — Thiệp cưới</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=The+Nautigal:wght@400;700&family=Viaoda+Libre&family=Clicker+Script&family=Lora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="locked">
+    <div
+      class="opening"
+      id="opening"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="opening-title"
+    >
+      <div class="opening-stars" aria-hidden="true">
+        <span>❄</span><span>❄</span><span>❄</span><span>❄</span><span>❄</span>
+      </div>
+      <div class="snow-burst" id="snowBurst" aria-hidden="true"></div>
+      <div class="invitation-card" id="openingCard">
+        <span class="opening-flower flower-left" aria-hidden="true">
+          <img src="assets/flower.webp" alt="" />
+        </span>
+        <span class="opening-flower flower-right" aria-hidden="true">
+          <img src="assets/flower.webp" alt="" />
+        </span>
+        <div class="heart-seal" aria-hidden="true">♥</div>
+        <h1 id="opening-title">
+          <span>Khánh Duy</span><i>&amp;</i><span>Ngọc Hân</span>
+        </h1>
+        <div class="tiny-flourish" aria-hidden="true">— ❦ —</div>
+        <p class="opening-date">16 tháng 1, 2027</p>
+        <p class="opening-invite">Thân Mời</p>
+        <button class="black-button" id="openInvitation" type="button">
+          Mở thiệp
+        </button>
+      </div>
+    </div>
+
+    <main class="site-shell" id="site" aria-hidden="true">
+      <section class="hero satin-section" aria-label="Save the date">
+        <p class="eyebrow reveal">SAVE THE DATE</p>
+        <div class="hero-composition">
+          <img
+            class="envelope-background"
+            src="assets/envelope-background.webp"
+            alt=""
+          />
+          <div class="hero-photo reveal">
+            <div class="hero-photo-tilt">
+              <img
+                src="assets/photo-5.webp"
+                alt="Ảnh cưới Khánh Duy và Ngọc Hân"
+              />
+            </div>
+          </div>
+          <span class="hero-flower" aria-hidden="true"
+            ><img src="assets/flower.webp" alt=""
+          /></span>
+          <img class="hero-lace" src="assets/envelope-cover.webp" alt="" />
+        </div>
+        <div class="names-section">
+          <div class="names reveal">
+            <span>Khánh Duy</span>
+            <span>Ngọc Hân</span>
+            <span class="names-watermark" aria-hidden="true">&amp;</span>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="lace-panel ceremony-panel"
+        aria-labelledby="ceremony-title"
+      >
+        <div class="lace-panel-top" aria-hidden="true"></div>
+        <div class="lace-panel-body">
+          <h2 id="ceremony-title">THÔNG TIN LỄ CƯỚI</h2>
+          <div class="parents-grid reveal">
+            <div>
+              <small>Ông Bà</small>
+              <strong>Trịnh Minh Tuấn</strong>
+              <strong>Trịnh Tuệ Anh</strong>
+            </div>
+            <span class="parents-divider" aria-hidden="true"></span>
+            <div>
+              <small>Ông Bà</small>
+              <strong>Đinh Văn Toàn</strong>
+              <strong>Đinh Thanh Trúc</strong>
+            </div>
+          </div>
+
+          <p class="announcement reveal">
+            HAI GIA ĐÌNH TRÂN TRỌNG BÁO TIN LỄ THÀNH HÔN<br />
+            CỦA HAI CON CHÚNG TÔI
+          </p>
+
+          <div class="couple-full reveal">
+            <span>Khánh Duy</span>
+            <i>&amp;</i>
+            <span>Ngọc Hân</span>
+          </div>
+
+          <div class="ceremony-block reveal">
+            <h3>LỄ THÀNH HÔN</h3>
+            <p>TRUNG TÂM HỘI NGHỊ TIỆC CƯỚI MINH ANH</p>
+            <div class="event-meta">
+              <span>VÀO LÚC 18:00</span><span>THỨ BẢY</span>
+            </div>
+            <div class="date-lockup">
+              <b>16</b><span class="date-divider" aria-hidden="true"></span>
+              <div class="date-month">
+                <strong>THÁNG 01</strong><span>2027</span>
+              </div>
+            </div>
+            <p class="lunar-date">(TỨC NGÀY 9 THÁNG 12 NĂM BÍNH NGỌ)</p>
+          </div>
+
+          <div class="ceremony-block reveal">
+            <h3>TIỆC CƯỚI</h3>
+            <p>TRUNG TÂM HỘI NGHỊ TIỆC CƯỚI MINH ANH</p>
+            <div class="event-meta">
+              <span>VÀO LÚC 19:30</span><span>THỨ BẢY</span>
+            </div>
+            <div class="date-lockup">
+              <b>16</b><span class="date-divider" aria-hidden="true"></span>
+              <div class="date-month">
+                <strong>THÁNG 01</strong><span>2027</span>
+              </div>
+            </div>
+            <p class="lunar-date">(TỨC NGÀY 9 THÁNG 12 NĂM BÍNH NGỌ)</p>
+          </div>
+        </div>
+        <div class="lace-panel-bottom" aria-hidden="true"></div>
+      </section>
+
+      <section class="album satin-section" aria-labelledby="album-title">
+        <h2 id="album-title">ALBUM ẢNH</h2>
+        <div class="carousel" id="carousel" aria-roledescription="carousel">
+          <button
+            class="carousel-arrow prev"
+            id="prevPhoto"
+            aria-label="Ảnh trước"
+          >
+            ‹
+          </button>
+          <div class="carousel-stage" id="carouselStage"></div>
+          <button
+            class="carousel-arrow next"
+            id="nextPhoto"
+            aria-label="Ảnh tiếp theo"
+          >
+            ›
+          </button>
+        </div>
+        <p class="carousel-count"><span id="currentPhoto">1</span> / 8</p>
+      </section>
+
+      <section
+        class="lace-panel reception-panel"
+        aria-labelledby="reception-title"
+      >
+        <div class="lace-panel-top" aria-hidden="true"></div>
+        <div class="lace-panel-body">
+          <h2 id="reception-title">THÔNG TIN TIỆC CƯỚI</h2>
+          <h3>TIỆC CƯỚI SẼ DIỄN RA VÀO LÚC:</h3>
+          <div class="event-meta"><span>18:00</span><span>THỨ BẢY</span></div>
+          <div class="date-lockup large reveal">
+            <b>16</b><span class="date-divider" aria-hidden="true"></span>
+            <div class="date-month"><strong>THÁNG 01</strong><span>2027</span></div>
+          </div>
+          <p class="lunar-date">(TỨC NGÀY 9 THÁNG 12 NĂM BÍNH NGỌ)</p>
+          <div class="reception-times reveal">
+            <div><span>ĐÓN KHÁCH</span><strong>17:00</strong></div>
+            <div><span>KHAI TIỆC</span><strong>19:30</strong></div>
+          </div>
+
+          <div class="countdown-wrap reveal">
+            <p>CÙNG ĐẾM NGƯỢC</p>
+            <div class="countdown" id="countdown">Đang tính toán...</div>
+          </div>
+
+          <div class="calendar reveal" aria-label="Lịch tháng 1 năm 2027">
+            <div class="calendar-title">Tháng 1 / 2027</div>
+            <div class="calendar-grid weekdays">
+              <span>T2</span><span>T3</span><span>T4</span><span>T5</span
+              ><span>T6</span><span>T7</span><span>CN</span>
+            </div>
+            <div class="calendar-grid days">
+              <span></span><span></span><span></span><span></span
+              ><span>1</span><span>2</span> <span>3</span><span>4</span
+              ><span>5</span><span>6</span><span>7</span><span>8</span
+              ><span>9</span> <span>10</span><span>11</span><span>12</span
+              ><span>13</span><span>14</span><span>15</span><b>16</b>
+              <span>17</span><span>18</span><span>19</span><span>20</span
+              ><span>21</span><span>22</span><span>23</span> <span>24</span
+              ><span>25</span><span>26</span><span>27</span><span>28</span
+              ><span>29</span><span>30</span>
+              <span>31</span>
+            </div>
+          </div>
+
+          <a
+            class="calendar-link"
+            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=L%E1%BB%85+c%C6%B0%E1%BB%9Bi+Kh%C3%A1nh+Duy+%26+Ng%E1%BB%8Dc+H%C3%A2n&dates=20270116T110000Z/20270116T140000Z&details=Tr%C3%A2n+tr%E1%BB%8Dng+k%C3%ADnh+m%E1%BB%9Di"
+            target="_blank"
+            rel="noreferrer"
+            >Thêm vào lịch</a
+          >
+          <button
+            class="black-button rsvp-button"
+            type="button"
+            data-scroll-to="guestbook"
+          >
+            XÁC NHẬN THAM DỰ
+          </button>
+        </div>
+        <div class="lace-panel-bottom" aria-hidden="true"></div>
+      </section>
+
+      <section class="location satin-section" aria-labelledby="location-title">
+        <h2 id="location-title">TIỆC CƯỚI SẼ TỔ CHỨC TẠI</h2>
+        <p>Số 23D đường Nguyên Hồng, phường Hạnh Thông, TPHCM</p>
+        <div class="map-wrap reveal">
+          <iframe
+            title="Bản đồ địa điểm tổ chức tiệc cưới"
+            src="https://maps.google.com/maps?q=23D%20%C4%90%C6%B0%E1%BB%9Dng%20Nguy%C3%AAn%20H%E1%BB%93ng%2C%20Ph%C6%B0%E1%BB%9Dng%20H%E1%BA%A1nh%20Th%C3%B4ng%2C%20TPHCM&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+          ></iframe>
+        </div>
+        <a
+          class="direction-link"
+          href="https://maps.google.com/?q=23D+%C4%90%C6%B0%E1%BB%9Dng+Nguy%C3%AAn+H%E1%BB%93ng%2C+Ph%C6%B0%E1%BB%9Dng+H%E1%BA%A1nh+Th%C3%B4ng%2C+TPHCM"
+          target="_blank"
+          rel="noreferrer"
+          >⌁ Chỉ đường</a
+        >
+      </section>
+
+      <section class="schedule satin-section" aria-labelledby="schedule-title">
+        <div class="dresscode reveal">
+          <h2>DRESS CODE</h2>
+          <p>Trang phục dự tiệc</p>
+          <div
+            class="color-dots"
+            aria-label="Màu trang phục: đen, nâu be và trắng kem"
+          >
+            <span style="--dot: #2f2a26"></span>
+            <span style="--dot: #a08b74"></span>
+            <span style="--dot: #f4efe7"></span>
+          </div>
+        </div>
+
+        <h2 id="schedule-title">LỊCH TRÌNH NGÀY CƯỚI</h2>
+        <ol class="timeline reveal">
+          <li><time>14:00</time><span>Lễ gia tiên tại nhà gái</span></li>
+          <li><time>15:30</time><span>Đón dâu</span></li>
+          <li><time>17:00</time><span>Lễ gia tiên tại nhà trai</span></li>
+          <li class="with-icon">
+            <time>18:00</time><b aria-hidden="true">⌂</b><span>Đón khách</span>
+          </li>
+          <li class="with-icon">
+            <time>18:30</time><b aria-hidden="true">♙</b
+            ><span>Nghi thức thành hôn</span>
+          </li>
+          <li class="with-icon">
+            <time>19:00</time><b aria-hidden="true">♫</b
+            ><span>Rót rượu giao bôi và cắt bánh</span>
+          </li>
+          <li><time>19:30</time><span>Khai tiệc</span></li>
+          <li>
+            <time>20:30</time><span>Cô dâu chú rể chúc mừng từng bàn</span>
+          </li>
+          <li><time>22:00</time><span>Kết thúc tiệc</span></li>
+        </ol>
+      </section>
+
+      <section
+        class="guestbook"
+        id="guestbook"
+        aria-labelledby="guestbook-title"
+      >
+        <h2 id="guestbook-title">SỔ LƯU BÚT</h2>
+        <form id="wishForm">
+          <label>
+            <span class="sr-only">Tên của bạn</span>
+            <input
+              id="wishName"
+              name="name"
+              maxlength="50"
+              placeholder="Nhập tên*"
+              required
+            />
+          </label>
+          <label>
+            <span class="sr-only">Lời chúc</span>
+            <textarea
+              id="wishMessage"
+              name="message"
+              maxlength="240"
+              placeholder="Nhập lời chúc*"
+              required
+            ></textarea>
+          </label>
+          <div class="guestbook-actions">
+            <span aria-hidden="true">✎</span>
+            <button class="black-button" type="submit">GỬI LỜI CHÚC</button>
+          </div>
+        </form>
+        <div class="wishes" id="wishes" aria-live="polite"></div>
+      </section>
+
+      <section class="gift-section satin-section" aria-labelledby="gift-title">
+        <h2 id="gift-title">HỘP QUÀ MỪNG</h2>
+        <button
+          class="gift-button"
+          id="giftButton"
+          type="button"
+          aria-label="Mở hộp quà mừng"
+        >
+          <span class="gift-stars" aria-hidden="true">
+            <i>✦</i><i>✧</i><i>✦</i><i>✧</i><i>✦</i><i>✧</i>
+          </span>
+          <span class="mini-gift mini-gift-a" aria-hidden="true">🎁</span>
+          <span class="mini-gift mini-gift-b" aria-hidden="true">🎁</span>
+          <span class="mini-gift mini-gift-c" aria-hidden="true">🎁</span>
+          <span class="mini-gift mini-gift-d" aria-hidden="true">🎁</span>
+          <span class="mini-gift mini-gift-e" aria-hidden="true">🎁</span>
+          <span class="mini-gift mini-gift-f" aria-hidden="true">🎁</span>
+          <span class="gift-firework gift-firework-a" aria-hidden="true"></span>
+          <span class="gift-firework gift-firework-b" aria-hidden="true"></span>
+          <img src="assets/giftbox.webp" alt="" />
+          <span>Nhấn để mở</span>
+        </button>
+        <p class="gift-message"><strong>Sự hiện diện của quý khách là niềm vinh hạnh của gia đình chúng tôi!</strong></p>
+      </section>
+    </main>
+
+    <button
+      class="music-toggle"
+      id="musicToggle"
+      type="button"
+      aria-label="Bật nhạc"
+      aria-pressed="false"
+    >
+      <img src="assets/music.webp" alt="" />
+      <span class="sound-bars" aria-hidden="true"
+        ><i></i><i></i><i></i><i></i
+      ></span>
+    </button>
+    <button
+      class="auto-scroll-toggle"
+      id="autoScrollToggle"
+      type="button"
+      aria-label="Tạm dừng tự cuộn"
+      aria-pressed="false"
+      title="Tạm dừng tự cuộn"
+    >
+      <span aria-hidden="true">Ⅱ</span>
+    </button>
+    <audio
+      id="backgroundMusic"
+      src="assets/music.mp3"
+      loop
+      preload="metadata"
+    ></audio>
+
+    <div
+      class="gift-modal"
+      id="giftModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="gift-modal-title"
+      hidden
+    >
+      <button
+        class="modal-backdrop"
+        type="button"
+        data-close-modal
+        aria-label="Đóng hộp quà"
+      ></button>
+      <div class="gift-card">
+        <button
+          class="modal-close"
+          type="button"
+          data-close-modal
+          aria-label="Đóng"
+        >
+          ×
+        </button>
+        <h2 id="gift-modal-title">Hộp Quà Mừng</h2>
+        <p>Chú Rể — THIỆP CƯỚI DEMO</p>
+        <div class="qr-placeholder" aria-label="Mã QR minh họa"></div>
+        <dl>
+          <div>
+            <dt>Ngân hàng</dt>
+            <dd>Vietcombank</dd>
+          </div>
+          <div>
+            <dt>Số tài khoản</dt>
+            <dd>0000000000</dd>
+          </div>
+          <div>
+            <dt>Chủ tài khoản</dt>
+            <dd>THIEP CUOI DEMO</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
