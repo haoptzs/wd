@@ -120,7 +120,10 @@ function runAutoScroll(now) {
     pauseAutoScroll();
     return;
   }
-  root.scrollTop = Math.min(maxScroll, window.scrollY + autoScrollSpeed * elapsedSeconds);
+  root.scrollTop = Math.min(
+    maxScroll,
+    window.scrollY + autoScrollSpeed * elapsedSeconds,
+  );
   autoScrollFrame = window.requestAnimationFrame(runAutoScroll);
 }
 
@@ -129,15 +132,25 @@ function createSnowBurst() {
 
   const particleCount = 38;
   for (let i = 0; i < particleCount; i += 1) {
-    const angle = (Math.PI * 2 * i) / particleCount + (Math.random() - 0.5) * 0.28;
+    const angle =
+      (Math.PI * 2 * i) / particleCount + (Math.random() - 0.5) * 0.28;
     const distance = 90 + Math.random() * 260;
     const particle = document.createElement("span");
     particle.textContent = "✣";
     particle.style.setProperty("--burst-x", `${Math.cos(angle) * distance}px`);
     particle.style.setProperty("--burst-y", `${Math.sin(angle) * distance}px`);
-    particle.style.setProperty("--burst-rotation", `${Math.random() * 300 - 150}deg`);
-    particle.style.setProperty("--particle-size", `${12 + Math.random() * 20}px`);
-    particle.style.setProperty("--particle-delay", `${1.5 + Math.random() * 0.15}s`);
+    particle.style.setProperty(
+      "--burst-rotation",
+      `${Math.random() * 300 - 150}deg`,
+    );
+    particle.style.setProperty(
+      "--particle-size",
+      `${12 + Math.random() * 20}px`,
+    );
+    particle.style.setProperty(
+      "--particle-delay",
+      `${1.5 + Math.random() * 0.15}s`,
+    );
     snowBurst.append(particle);
   }
 }
@@ -191,7 +204,7 @@ function buildCarousel() {
 
     const image = document.createElement("img");
     image.src = source;
-    image.alt = `Ảnh cưới ${index + 1} của Khánh Duy và Ngọc Hân`;
+    image.alt = `Ảnh cưới ${index + 1} của Khánh Duy và Diễm Hân`;
     image.loading = index > 2 ? "lazy" : "eager";
     button.append(image);
     button.addEventListener("click", () => {
@@ -203,10 +216,13 @@ function buildCarousel() {
   });
   renderCarousel();
 
-  const carouselObserver = new IntersectionObserver(([entry]) => {
-    carouselVisible = entry.isIntersecting;
-    restartCarouselAutoplay();
-  }, { threshold: 0.25 });
+  const carouselObserver = new IntersectionObserver(
+    ([entry]) => {
+      carouselVisible = entry.isIntersecting;
+      restartCarouselAutoplay();
+    },
+    { threshold: 0.25 },
+  );
   carouselObserver.observe(carousel);
 }
 
@@ -322,11 +338,20 @@ openInvitation.addEventListener("click", openCard);
 musicToggle.addEventListener("click", toggleMusic);
 autoScrollToggle.addEventListener("click", toggleAutoScroll);
 site.addEventListener("click", (event) => {
-  if (event.target.closest("button, a, input, textarea, select, [contenteditable='true']")) return;
+  if (
+    event.target.closest(
+      "button, a, input, textarea, select, [contenteditable='true']",
+    )
+  )
+    return;
   toggleAutoScroll();
 });
 site.addEventListener("pointerdown", (event) => {
-  if (event.target.closest("button, a, input, textarea, select, [contenteditable='true']")) {
+  if (
+    event.target.closest(
+      "button, a, input, textarea, select, [contenteditable='true']",
+    )
+  ) {
     pauseAutoScroll();
   }
 });
@@ -334,7 +359,11 @@ window.addEventListener("wheel", pauseAutoScroll, { passive: true });
 window.addEventListener("touchmove", pauseAutoScroll, { passive: true });
 document.addEventListener("visibilitychange", restartCarouselAutoplay);
 document.addEventListener("keydown", (event) => {
-  if ([" ", "ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End"].includes(event.key)) {
+  if (
+    [" ", "ArrowDown", "ArrowUp", "PageDown", "PageUp", "Home", "End"].includes(
+      event.key,
+    )
+  ) {
     pauseAutoScroll();
   }
 });
