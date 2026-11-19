@@ -544,7 +544,7 @@ h3 {
   flex-direction: column;
   justify-content: center;
   width: 93.424%;
-  min-height: calc(0.85714 * var(--st-w));
+  min-height: calc(0.69429 * var(--st-w));
   margin: calc(0.05215 * var(--st-w)) auto 0;
   color: #0b0b0b;
   isolation: isolate;
@@ -589,8 +589,8 @@ h3 {
   position: relative;
   z-index: 1;
   flex: 1 0 auto;
-  min-height: calc(0.45 * var(--st-w));
-  padding: 10.5% 7.5% 17.476%;
+  min-height: calc(0.3645 * var(--st-w));
+  padding: 8.505% 7.5% 14.1556%;
   text-align: center;
   color: #111;
   font-family: "Playfair Display", Georgia, serif;
@@ -628,7 +628,7 @@ h3 {
   grid-template-columns: 1fr 1px 1fr;
   gap: 12px;
   align-items: stretch;
-  margin: calc(0.03175 * var(--st-w)) auto 0;
+  margin: calc(0.028575 * var(--st-w)) auto 0;
   font-size: 10px;
 }
 
@@ -651,7 +651,10 @@ h3 {
 }
 
 .announcement {
-  margin: calc(0.035 * var(--st-w)) auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35em;
+  margin: calc(0.0315 * var(--st-w)) auto 0;
   font-family: "Playfair Display", Georgia, serif;
   font-weight: 500;
   font-size: 16px;
@@ -663,7 +666,7 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 0.34em;
-  margin: calc(0.04 * var(--st-w)) auto 0;
+  margin: calc(0.036 * var(--st-w)) auto 0;
   font-family: "Viaoda Libre", "EB Garamond", ChungDoiIndic, serif !important;
   font-size: clamp(58px, 8vw, 78px);
   font-weight: 500;
@@ -676,12 +679,12 @@ h3 {
 }
 
 .ceremony-block {
-  margin: calc(0.045 * var(--st-w)) auto 0;
+  margin: calc(0.0405 * var(--st-w)) auto 0;
 }
 
 .ceremony-block h3,
 .reception-panel h3 {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 20px;
   font-weight: 700;
@@ -689,7 +692,7 @@ h3 {
 }
 
 .ceremony-block p {
-  margin: 0 auto 14px;
+  margin: 0 auto 12.6px;
   font-family: "Playfair Display", Georgia, serif;
   font-size: 20px;
   font-weight: 600;
@@ -700,7 +703,7 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: min(100%, 390px);
-  margin: 18px auto 0;
+  margin: 16.2px auto 0;
   color: #98795f;
   font-family: "Cormorant Garamond", serif;
   font-size: 18px;
@@ -714,14 +717,14 @@ h3 {
   justify-content: center;
   align-items: end;
   gap: 12px;
-  margin: 16px auto 8px;
+  margin: 14.4px auto 7.2px;
 }
 
 .ceremony-block .date-lockup {
   grid-template-columns: auto 1px auto;
   align-items: center;
   gap: 16px;
-  margin: 8px auto 0;
+  margin: 7.2px auto 0;
 }
 
 .date-divider {
@@ -741,7 +744,7 @@ h3 {
 }
 
 .ceremony-block .lunar-date {
-  margin: 14px auto 0;
+  margin: 12.6px auto 0;
   color: #98795f;
   font-family: "Cormorant Garamond", serif;
   font-size: 17px;
@@ -859,22 +862,22 @@ h3 {
 }
 
 .reception-panel .lace-panel-body {
-  padding: 24px 7.5% 10%;
+  padding: 19.44px 7.5% 8.1%;
 }
 
 .reception-panel h3 {
-  margin: 28px auto 8px;
+  margin: 25.2px auto 7.2px;
 }
 
 .reception-panel .event-meta {
-  margin-top: 14px;
+  margin-top: 12.6px;
 }
 
 .reception-panel .date-lockup {
   grid-template-columns: auto 1px auto;
   align-items: center;
   gap: 16px;
-  margin: 6px auto 0;
+  margin: 5.4px auto 0;
 }
 
 .reception-panel .date-month {
@@ -887,7 +890,7 @@ h3 {
 }
 
 .reception-panel .lunar-date {
-  margin-top: 10px;
+  margin-top: 9px;
 }
 
 .date-lockup.large b {
@@ -898,7 +901,7 @@ h3 {
   display: flex;
   justify-content: center;
   gap: 55px;
-  margin: 25px 0 22px;
+  margin: 22.5px 0 19.8px;
   font-family: "Playfair Display", Georgia, serif;
 }
 
@@ -934,7 +937,7 @@ h3 {
 
 .calendar {
   width: min(100%, 390px);
-  margin: 20px auto 14px;
+  margin: 18px auto 12.6px;
   overflow: hidden;
   border: 1px solid #c4bbb4;
   border-radius: 8px;
@@ -1903,45 +1906,87 @@ h3 {
   }
 
   .invitation-card {
-    width: min(94vw, 650px);
-    min-height: min(550px, calc(100svh - 48px));
-    padding: clamp(20px, 4vh, 30px) 10% clamp(24px, 4vh, 34px);
-    translate: 0 -6px;
+    width: min(86vw, 540px);
+    aspect-ratio: 1.46 / 1;
+    min-height: 0;
+    padding: clamp(14px, 3vh, 22px) 10% clamp(16px, 3vh, 24px);
+    translate: 0 -8svh;
   }
   .opening-flower {
-    top: 5%;
-    width: clamp(74px, 22vw, 118px);
-    height: 62%;
+    top: 4%;
+    width: clamp(42px, 12vw, 68px);
+    height: 64%;
   }
   .flower-left {
-    transform: translateY(-15px) scaleX(-1) rotate(-4deg);
+    transform: translateY(-7px) scaleX(-1) rotate(-4deg);
   }
   .flower-right {
-    transform: translateY(-15px) rotate(-4deg);
+    transform: translateY(-7px) rotate(-4deg);
   }
   .heart-seal {
-    width: clamp(42px, 12vw, 54px);
-    height: clamp(42px, 12vw, 54px);
+    width: clamp(27px, 6.5vw, 36px);
+    height: clamp(27px, 6.5vw, 36px);
+    font-size: clamp(14px, 4.2vw, 18px);
   }
   .invitation-card h1 {
-    font-size: clamp(30px, 8vw, 40px);
+    font-size: clamp(18px, 4.5vw, 25px);
+  }
+  .invitation-card h1 i {
+    margin: 0;
+    font-size: clamp(16px, 4vw, 21px);
+  }
+  .tiny-flourish {
+    font-size: clamp(8px, 2vw, 10px);
   }
   .opening-date,
   .opening-invite {
-    font-size: clamp(16px, 4.5vw, 20px);
+    font-size: clamp(10px, 2.7vw, 12px);
   }
   #openInvitation {
-    width: min(72%, 180px);
-    min-height: 48px;
-    font-size: 19px;
+    width: min(55%, 105px);
+    min-height: 30px;
+    padding: 5px 11px;
+    font-size: clamp(11px, 2.8vw, 13px);
   }
 
   .names-section {
     padding-bottom: calc(0.17007 * var(--st-w));
   }
+  .names {
+    font-size: clamp(36px, calc(0.0405 * var(--st-w)), 52px);
+  }
+  .names-watermark {
+    font-size: 90px;
+  }
 
   .lace-panel-body {
-    padding: 10.5% 7.5% 17.476%;
+    padding: 8.505% 7.5% 14.1556%;
+  }
+  .lace-panel-body > * {
+    scale: 0.81;
+    transform-origin: top center;
+  }
+
+  .site-shell > section:not(.hero) {
+    --mobile-content-scale: 0.9;
+  }
+  .site-shell > section:not(.hero) :is(
+      h2,
+      h3,
+      p,
+      a,
+      button,
+      time,
+      .carousel-count,
+      .timeline li,
+      .guestbook input,
+      .guestbook textarea,
+      .wish
+    ) {
+    zoom: var(--mobile-content-scale);
+  }
+  .announcement-line {
+    display: block;
   }
 
   .parents-grid {
